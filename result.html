@@ -5,26 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <style>
         .contenedor {
             display: grid;
             grid-template-columns: auto auto auto auto;
-            grid-template-rows: 130px 500px 30px;
+            grid-template-rows: 130px 500px 25px;
             background-color: rgb(80, 190, 0);
             padding: 10px;
             padding-top: 10px;
             padding-bottom: 0%;
             gap: 5px;
         }
-        .contenedor > div {
+
+        .contenedor>div {
             background-color: rgb(0, 0, 150);
         }
-        .header{
+
+        .header {
             grid-column-start: 1;
             grid-column-end: 5;
+            padding-top: 30px;
+            padding-left: 50px;
+           
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
         }
-        .cuerpo{
+
+        .nav {
+            background: linear-gradient(rgb(80, 190, 0), yellow);
+           
+            text-decoration: none;
+            padding: 5px 95px;
+            border-radius: 5px;
+            margin: 2px;
+            transition: width 10s;
+            font-size: 23px;
+
+
+
+
+
+        }
+
+        .nav:hover {
+            width: 1000px;
+            background: linear-gradient(blue, yellow);
+            color: white;
+            border-color: rgb(80, 190, 0);
+            border-width: 4px;
+            border-style: solid;
+
+
+        }
+
+        .cuerpo {
             grid-column-start: 2;
             grid-column-end: 4;
             padding-top: 50px;
@@ -33,28 +69,72 @@
             padding-right: 100px;
             justify-self: center;
         }
-        .footer{
+
+        .footer {
             grid-column-start: 1;
             grid-column-end: 5;
-        }
-            
+            color: white;
 
-        
+
+
+        }
+
+        .direccion {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding-left: 2%;
+
+            color: white;
+            width: 97%;
+            position: absolute;
+            bottom: 0;
+
+        }
+
+        .devicon-facebook-plain {
+            color: white;
+            width: 97%;
+            position: absolute;
+            bottom: 0;
+            padding-left: 92%;
+            margin-bottom: 3px;
+        }
+
+        .devicon-twitter-original {
+            color: white;
+            width: 97%;
+            position: absolute;
+            bottom: 0;
+            padding-left: 94%;
+            margin-bottom: 3px;
+        }
     </style>
 </head>
 
 <body>
     <div class="contenedor">
-        <div class="header">1</div>
-        
-        
+        <div class="header">
+            <nav>
+                <a class="nav" href="prueba.html"> Inicio </a>
+                <a class="nav" href="Juegos.html"> Efemérides </a>
+                <a class="nav" href="Resultados.html"> Resultados </a>
+                <a class="nav" href="Juegos.html"> Contacto </a>
+
+            </nav>
+        </div>
+
+
         <div style="background-color:rgb(80, 190, 0) ;">5</div>
-        <div class="cuerpo"><iframe border="0" width="360" height="400" src="https://www.jugandoonline.com/entusitio/mod_jol.asp"
-            frameborder="no" scrolling="yes"></iframe></div>
-        
+        <div class="cuerpo"><iframe border="0" width="360" height="400"
+                src="https://www.jugandoonline.com/entusitio/mod_jol.asp" frameborder="no" scrolling="yes"></iframe>
+        </div>
+
         <div style="background-color:rgb(80, 190, 0) ;">8</div>
-        <div class="footer">9</div>
-        
+        <div class="footer">
+            <a class="direccion">Dirección: Avenidad Libertador, Moreno, Buenos Aires.</a>
+            <i class="devicon-facebook-plain"></i>
+            <i class="devicon-twitter-original"></i>
+        </div>
+
     </div>
 </body>
 
