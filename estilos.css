@@ -20,7 +20,7 @@ header {
 .nav {
     background: linear-gradient(rgb(80, 190, 0), yellow);
     text-decoration: none;
-    padding: 1px 97px;
+    padding: 1px 91px;
     border-radius: 5px;
     margin: 2px;
     transition: width 10s;
@@ -77,4 +77,3 @@ div{
     padding-left: 93%;
     margin-bottom: 3px;
 }
-
