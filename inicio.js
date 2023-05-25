@@ -30,12 +30,29 @@ function mostrarContenido(diarios, titulos) {
     let i = 0;
     let elementoContenedor;
     while (i < titulos.length) {
-        elementoContenedor = document.createElement('a');
-        diarioElemento = diarios[1];
-        tituloElemento = titulos[i];
 
-        elementoContenedor.textContent;
-        document.body.appendChild(elementoContenedor);
+        //creo los elementos a usar
+        elementoContenedor = document.createElement('a');
+        let divContenedor = document.createElement('div');
+        let tituloNoticia = document.createElement('h3');
+        let contenidoNoticia = document.createElement('p'); 
+        
+        let contenido = diarios[i];
+        let tituloElemento = titulos[i];
+        //Asigno contenido:
+        tituloNoticia.textContent = "🔴 " + tituloElemento;
+        contenidoNoticia.textContent = contenido;
+
+        //Asigno clases:
+        tituloNoticia.classList.add("tituloApi");
+        contenidoNoticia.classList.add("contenidoApi");
+        divContenedor.classList.add("divContenedor");
+        
+        //Armo estructura:
+        divContenedor.appendChild(tituloNoticia);
+        divContenedor.appendChild(contenidoNoticia);
+        
+        document.body.appendChild(divContenedor);
         i++;
     }
 }

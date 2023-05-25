@@ -1,0 +1,58 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 130px 450px 25px;
+    background-color: rgb(80, 190, 0);
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 0%;
+    gap: 5px;
+}
+
+.contenedor>div {
+    background-color: rgb(0, 0, 150);
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-top: 30px;
+    padding-left: 50px;
+   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.nav {
+    background: linear-gradient(rgb(80, 190, 0), yellow);
+   
+    text-decoration: none;
+    padding: 5px 95px;
+    border-radius: 5px;
+    margin: 2px;
+    transition: width 10s;
+    font-size: 23px;
+
+}
+
+.cuerpo {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-self: center;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    
+
+
+
+}

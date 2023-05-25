@@ -60,6 +60,8 @@ div{
     
 }
 
+
+
 .devicon-facebook-plain{
     color: white;
     width: 97%;
@@ -77,6 +79,7 @@ div{
     padding-left: 93%;
     margin-bottom: 3px;
 }
+
 .contenedor {
     display: grid;
 
@@ -117,5 +120,23 @@ div{
         /* Distribuimos el contenido en cada fila */
         grid-template-areas: "header"  "izq"  "der""contenido" "pie";
     }
+
+div{
+    border-radius: 22px;
+}
+
+.divContenedor {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    
+}
+
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color: white;
+    position: fixed;
+    bottom: 0;
 }
 
