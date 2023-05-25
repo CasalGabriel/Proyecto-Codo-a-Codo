@@ -68,7 +68,6 @@ async function getDatos() {
     let data = await response.json();
     // Aquí puedes guardar el objeto JSON en una variable
     let miVariable = data;
-    console.log(miVariable.articles[0].author);
     let [titulos, diarios] = limpiarDatos(miVariable);
     mostrarContenido(titulos, diarios);
 }
